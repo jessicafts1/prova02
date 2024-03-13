@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Saúde</title>
+  <style>
+h3 {
+	background-color: antiquewhite;
+	font-size: 120%;
+	font-family: 'Comic Sans MS';
+	}
+
+#oi {
+	text-align: center;
+	font-size: 130%;
+	}
+
+p 	{
+	font-size: 140%;
+	font-family: comic sans MS;
+	}
+
+input {
+	font-size: 100%;
+	}
+
+textarea {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+::placeholder {
+	font-family: Comic Sans MS;
+	}
+form {
+	font-family: Comic Sans MS;
+	font-size: 100%;
+	}
+
+	input[type="submit"],  input[type="reset"] {
+                height: 25px;
+                background-color: white;
+                border-radius: 5px;
+            }
+	
+
+</style>
+</head>
+<body>
+  <fieldset>
+	<h2>Crie seu login de acesso</h2>
+	<p>Nome de Usuário <input type="text" required="name" name="login"></p>
+  <p> Insira sua senha: <input type="password" required="senha" name="senha" maxlength="6" value="123456"></p>
+  <input type="submit">
+  
+	</fieldset></p>
+  
+	
+	
+	<fieldset>
+	<form action="index.html">
+  	<h3 id="oi">Reconciliação Medicamentosa</h3>
+  	
+  	<p>Nome do Paciente:
+  		<input type="text" required name="name" size="50" maxlength="50" id="fname" placeholder="Digite aqui seu nome completo"><br>
+  	</p>		
+  	<p>Data de Nascimento (dd/mm/aaaa):
+  		<input type="data" required name="dia" size="1" maxlength="2" id="dia" placeholder="dia">/
+  		<input type="data" required name="mes" size="1" maxlength="2" id="mes" placeholder="mês">/
+  		<input type="data" required name="ano" size="1" maxlength="4" id="ano" placeholder="ano">
+  	</p>
+  	<p>Medicamentos de uso contínuo:<br>
+  		<textarea name="medicamento" id="medicamento" rows="10" cols="30" required name="medicamento" size="50" maxlength="100" id="medicamentos" placeholder="Ex: Losartana, Hidroclorotiazida"></textarea>
+		  <input type="reset" value="Limpar" name="Limpar">
+	</p>
+  	<p>
+		Possui alergias?<br>
+		<input type="radio" name="med">SIM<br>
+		<input type="radio" name="med">NÃO<br>
+  		<input type="text" required name="alergia" size="20" maxlength="40" id="Medicamentoss" placeholder="Se sim, quais?"><br>
+  	</p>
+  	<p>Telefone: DDD (
+  		<input type="tel" required name="ddd" size="1" maxlength="2" id="ddd"placeholder="DDD">)
+  		Tel:<input type="tel" required name="telefone" size="5" maxlength="8" id="tel" placeholder="telefone">
+  	  	</p>
+  	<p>E-mail:
+  		<input type="email" required name="email" size="30" maxlength="40" id="email" placeholder="fulanodetal@bbbb.com" ><br>
+  	</p>
+</form>
+  </fieldset></p>
+ 
+  <fieldset>
+ <form>
+	<h3>Informações Adicionais:</h3>
+  	
+	<p> Melhor horário para administrar os medicamentos:<br />
+  			<select name="horario">
+  				  <option value="valor1">manhã</option>
+  				  <option value="valor2">tarde</option>
+  				  <option value="valor3">noite</option>
+  			</select>
+  		</p>
+  		 		
+
+  		<h3>Possui alguma queixa no momento? </h3>
+  			<input type="checkbox">Dor<br>
+  				<input type="checkbox">Quantidade de medicamentos a ingerir<br>
+  				<input type="checkbox">Dificuldade de deglutição<br>
+  				<input type="checkbox">Sonolência<br>
+  				<input type="checkbox">Idas ao banheiro<br>
+  				<input type="checkbox">Nenhuma<br>
+  			</p>
+  		
+			  <input type="submit" value="Enviar" name="Enviar">
+			 <input type="reset"> 
+  </fieldset>
+</form>
+</body>
+</html>
